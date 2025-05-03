@@ -1,0 +1,75 @@
+.navbar {
+        background-color: #000; 
+        padding: 15px 30px;
+        }
+.navbar-brand{
+font-weight: bolder;
+            color: #fff;
+            font-size: 32px;
+}
+.navBtn{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.navBtn {
+    background-color: transparent;
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin-left: 35px;
+  margin-right: 35px;
+
+  transition: all 0.2s ease;
+}
+.navBtn:hover, 
+.navBtn:focus{
+  background-color: #441c8e;
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 40px;
+  outline: none;
+}
+
+
+
+
+.box{
+    position: relative;
+}
+
+.input {
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    background: none;
+    border: 4px solid #441c8e;
+    border-radius: 50px;
+    box-sizing: border-box;
+    font-family: Comic Sans MS;
+    font-size: 26px;
+    color: #441c8e  ;
+    outline: none;
+    transition: .3s;
+}
+.box:hover input{
+    width: 200px;
+    background: #3b3640;
+    border-radius: 10px;
+}
+.search-icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #4c34e7; /* SVG will use currentColor */
+    width: 30px;
+    height: 30px;
+    transition: .3s;
+    pointer-events: none;
+}   
+.search-icon:hover{
+    visibility: hidden;
+}
