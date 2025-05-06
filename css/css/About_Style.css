@@ -6,10 +6,9 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(to bottom, #0f0f1a, #1a1a2e);
+  background: linear-gradient(to bottom, #000, #000);
   color: white;
   line-height: 1.6;
-  padding: 20px;
 }
 
 header {

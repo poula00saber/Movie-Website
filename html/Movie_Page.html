@@ -1,18 +1,17 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Categories</title>
-        <link rel="stylesheet" href="../css/bootstrap.min.css" >
-        <link rel="stylesheet" href="../css/css/Movie_page.css" >
-          <link rel="stylesheet" href="../css/css/navbar.css" />
-         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-        <script type="text/javascript" src="../js/"></script>
-
-    </head>
-    <body style="background-color: #000;">
-        <nav class="navbar navbar-dark ">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/css/Movie_page.css">
+    <link rel="stylesheet" href="../css/css/navbar.css">
+    <link rel="stylesheet" href="../css/css/Movie_page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body style="background-color: #141313;">
+    <nav class="navbar navbar-dark ">
             <div class="d-flex justify-content-between align-items-center w-100">
                 <div class="d-flex align-items-center">
                     <a class="navbar-brand">
@@ -23,12 +22,12 @@
                 <div >
 
                     <a href="../html/Home.html">
-                    <button class="navBtn btn btn-dark">Home</button>
+                    <button class="navBtn btn btn-dark ">Home</button>
                     </a>
                     <a href="../html/Movie_Page.html">
                     <button class="navBtn btn btn-dark navBtn-active">Movies</button>
                     </a>
-                     <a href="../html/Review.html">
+                    <a href="../html/Review.html">
                     <button class="navBtn btn btn-dark">Reviews</button>
                     </a>
                     
@@ -46,10 +45,121 @@
             </div>
         </nav>
 
+    <div class="container">
+        <!-- Filter Dropdowns -->
+        <div class="filter-container d-flex flex-wrap gap-3">
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Category
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item  " href="#">All Categories</a></li>
+                    <li><a class="dropdown-item  " href="#">Action</a></li>
+                    <li><a class="dropdown-item  " href="#">Drama</a></li>
+                    <li><a class="dropdown-item  " href="#">Comedy</a></li>
+                    <li><a class="dropdown-item  " href="#">Romantic</a></li>
+                </ul>
+            </div>
 
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Language
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item  " href="#">All Languages</a></li>
+                    <li><a class="dropdown-item  " href="#">English</a></li>
+                    <li><a class="dropdown-item  " href="#">Arabic</a></li>
+                    <li><a class="dropdown-item  " href="#">Korean</a></li>
+                </ul>
+            </div>
 
-</div>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Release Date
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item  " href="#">All Years</a></li>
+                    <li><a class="dropdown-item  " href="#">2015</a></li>
+                    <li><a class="dropdown-item  " href="#">2020</a></li>
+                    <li><a class="dropdown-item  " href="#">2022</a></li>
+                </ul>
+            </div>
+        </div>
 
-    </nav>
-    </body>
-    </html>
+        <!-- Movie Grid -->
+        <div class="movie-grid">
+            <!-- Movie 1 -->
+            <div class="movie-card">
+                <img src="../Assets/movie1.jpg" class="card-img-top" alt="1917 Movie">
+                <div class="card-body">
+                    <h5 class="card-title">Oppenheimer</h5>
+                    <p class="card-text ">Drama • 2023 • 3h</p>
+                    <div class="d-flex justify-content-between align-items-center mt-2">
+                        <span class="badge bg-warning text-dark">8.3/10</span>
+                        <img src="../Assets/starIcon.png" style="width: 25px; height: 25px;" alt="">
+                        <a href="#" class="btn btn-success watch-btn">Watch Now</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Movie 2 -->
+            <div class="movie-card">
+                <img src="../Assets/movie2.jpg" class="card-img-top" alt="The Lighthouse Movie">
+                <div class="card-body">
+                    <h5 class="card-title">The Godfather</h5>
+                    <p class="card-text">Crime/Drama • 1972 • 2h 55m</p>
+                    <div class="d-flex justify-content-between align-items-center mt-2">
+                        <span class="badge bg-warning text-dark">9.2/10</span>
+                        <img src="../Assets/starIcon.png" style="width: 25px; height: 25px;" alt="">
+                        <a href="#" class="btn btn-success watch-btn">Watch Now</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Movie 3 -->
+            <div class="movie-card">
+                <img src="../Assets/movie3.jpg" class="card-img-top" alt="Movie Image">
+                <div class="card-body">
+                    <h5 class="card-title">1917</h5>
+                    <p class="card-text">War/Drama • 2019 • 1h 59m</p>
+                    <div class="d-flex justify-content-between align-items-center mt-2">
+                        <span class="badge bg-warning text-dark">8.2/10</span>
+                        <img src="../Assets/starIcon.png" style="width: 25px; height: 25px;" alt="">        
+                        <a href="#" class="btn btn-success watch-btn">Watch Now</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Movie 4 -->
+            <div class="movie-card">
+                <img src="../Assets/movie4.jpg" class="card-img-top" alt="Movie Image">
+                <div class="card-body">
+                    <h5 class="card-title">The Lighthouse</h5>
+                    <p class="card-text ">Horror/Drama • 2019 • 1h 49m</p>
+                    <div class="d-flex justify-content-between align-items-center mt-2">
+                        <span class="badge bg-warning text-dark">7.4/10</span>
+                        <img src="../Assets/starIcon.png" style="width: 25px; height: 25px;" alt="">
+                        <a href="#" class="btn btn-success watch-btn">Watch Now</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Movie 5 -->
+            <div class="movie-card">
+                <img src="../Assets/movie7.jpg" class="card-img-top" alt="Movie Image">
+                <div class="card-body">
+                    <h5 class="card-title">Spider-Man</h5>
+                    <p class="card-text ">Action • 2002 • 2h 01m</p>
+                    <div class="d-flex justify-content-between align-items-center mt-2">
+                        <span class="badge bg-warning text-dark">7.4/10</span>
+                        <img src="../Assets/starIcon.png" style="width: 25px; height: 25px;" alt="">
+                        <a href="#" class="btn btn-success watch-btn">Watch Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
