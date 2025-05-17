@@ -1,55 +1,308 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Home </title>
-        <link rel="stylesheet" href="../css/bootstrap.min.css" >
-        <link rel="stylesheet" href="../css/css/Movie_page.css" >
-          <link rel="stylesheet" href="../css/css/navbar.css" />
-         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-        <script type="text/javascript" src="../js/"></script>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/css/Movie_page.css" />
+    <link rel="stylesheet" href="../css/css/navbar.css" />
+    <link rel="stylesheet" href="../css/css/Home.css" />
 
-    </head>
-    <body style="background-color: #000;">
-        <nav class="navbar navbar-dark ">
-            <div class="d-flex justify-content-between align-items-center w-100">
-                <div class="d-flex align-items-center">
-                    <a class="navbar-brand">
-                        <img src="../Assets/icon.png" width="45" height="45" class="d-inline-block align-top" alt="">
-                        Movie
-                    </a>
-                </div>
-                <div >
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
+  </head>
 
-                    <a href="../html/Home.html">
-                    <button class="navBtn btn btn-dark navBtn-active">Home</button>
-                    </a>
-                    <a href="../html/Movie_Page.html">
-                    <button class="navBtn btn btn-dark ">Movies</button>
-                    </a>
-                     <a href="../html/Review.html">
-                    <button class="navBtn btn btn-dark">Reviews</button>
-                    </a>
-                    
-                    <a href="../html/About Page.html">
-                    <button class="navBtn btn btn-dark">About</button>
-                    </a>
-                </div>
-            
-                    <div class="box">
-                        <form name="search">
-                            <img src="../Assets/search-icon4.png" class="search-icon">
-                                <input type="text" class="input" name="txt">
-                        </form>
-                    </div>
-            </div>
-        </nav>
-
-
-
-</div>
-
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-dark">
+      <div class="d-flex justify-content-between align-items-center w-100">
+        <div class="d-flex align-items-center">
+          <a class="navbar-brand">
+            <img
+              src="../Assets/icon.png"
+              width="45"
+              height="45"
+              class="d-inline-block align-top"
+              alt=""
+            />
+            Movie
+          </a>
+        </div>
+        <div>
+          <a href="../html/Home.html">
+            <button class="navBtn btn btn-dark navBtn-active">Home</button>
+          </a>
+          <a href="../html/Movie_Page.html">
+            <button class="navBtn btn btn-dark">Movies</button>
+          </a>
+          <a href="../html/Review.html">
+            <button class="navBtn btn btn-dark">Reviews</button>
+          </a>
+          <a href="../html/About Page.html">
+            <button class="navBtn btn btn-dark">About</button>
+          </a>
+        </div>
+        <div class="box">
+          <form name="search">
+            <img src="../Assets/search-icon4.png" class="search-icon" />
+            <input type="text" class="input" name="txt" />
+          </form>
+        </div>
+      </div>
     </nav>
-    </body>
-    </html>
+
+    <!-- Hero Section -->
+    <div class="hero-section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-7 hero-content">
+            <span class="hero-badge">PREMIUM STREAMING</span>
+            <h1 class="hero-title">
+              Watch Unlimited <span class="highlight-text">Movies</span>
+            </h1>
+            <p class="hero-description">
+              Stream the latest blockbusters and award-winning films anytime,
+              anywhere. Discover new favorites and revisit classics with our
+              curated collection.
+            </p>
+            <div class="hero-features">
+              <div class="feature-item">
+                <i class="fas fa-film"></i>
+                <span>HD Quality</span>
+              </div>
+              <div class="feature-item">
+                <i class="fas fa-mobile-alt"></i>
+                <span>Watch Anywhere</span>
+              </div>
+              <div class="feature-item">
+                <i class="fas fa-download"></i>
+                <span>Download & Go</span>
+              </div>
+            </div>
+            <div class="hero-buttons">
+              <a href="../html/Movie_Page.html" class="btn-explore">
+                Explore Now <i class="fas fa-arrow-right"></i>
+              </a>
+              <a href="#" class="btn-trailer">
+                <i class="fas fa-play-circle"></i> Watch Trailer
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="hero-image-container">
+              <div class="floating-card card-1">
+                <img src="../Assets/movie1.jpg" alt="Featured Movie" />
+              </div>
+              <div class="floating-card card-2">
+                <img src="../Assets/movie2.jpg" alt="Featured Movie" />
+              </div>
+              <div class="floating-card card-3">
+                <img src="../Assets/movie3.jpg" alt="Featured Movie" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100">
+          <path
+            fill="#000"
+            fill-opacity="1"
+            d="M0,64L60,58.7C120,53,240,43,360,48C480,53,600,75,720,80C840,85,960,75,1080,64C1200,53,1320,43,1380,37.3L1440,32L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
+          ></path>
+        </svg>
+      </div>
+    </div>
+
+
+    <!-- Best Movies Section -->
+    <section class="best-movies">
+      <div class="container">
+        <h2 class="section-title">Best Movies</h2>
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <div class="movie-card">
+              <img
+                src="../Assets/movie2.jpg"
+                class="card-img-top"
+                alt="The Godfather"
+              />
+              <div class="card-body">
+                <h5 class="card-title">The Godfather</h5>
+                <p class="card-text">Crime/Drama • 1972 • 2h 55m</p>
+                <div
+                  class="d-flex justify-content-between align-items-center mt-2"
+                >
+                  <span class="badge bg-warning text-dark">9.2/10</span>
+                  <img
+                    src="../Assets/starIcon.png"
+                    style="width: 25px; height: 25px"
+                    alt=""
+                  />
+                  <a href="#" class="btn btn-success watch-btn">Watch Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <div class="movie-card">
+              <img
+                src="../Assets/movie1.jpg"
+                class="card-img-top"
+                alt="The Shawshank Redemption"
+              />
+              <div class="card-body">
+                <h5 class="card-title">The Shawshank Redemption</h5>
+                <p class="card-text">Drama • 1994 • 2h 22m</p>
+                <div
+                  class="d-flex justify-content-between align-items-center mt-2"
+                >
+                  <span class="badge bg-warning text-dark">9.3/10</span>
+                  <img
+                    src="../Assets/starIcon.png"
+                    style="width: 25px; height: 25px"
+                    alt=""
+                  />
+                  <a href="#" class="btn btn-success watch-btn">Watch Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <div class="movie-card">
+              <img
+                src="../Assets/movie3.jpg"
+                class="card-img-top"
+                alt="The Dark Knight"
+              />
+              <div class="card-body">
+                <h5 class="card-title">The Dark Knight</h5>
+                <p class="card-text">Action/Crime • 2008 • 2h 32m</p>
+                <div
+                  class="d-flex justify-content-between align-items-center mt-2"
+                >
+                  <span class="badge bg-warning text-dark">9.0/10</span>
+                  <img
+                    src="../Assets/starIcon.png"
+                    style="width: 25px; height: 25px"
+                    alt=""
+                  />
+                  <a href="#" class="btn btn-success watch-btn">Watch Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <!-- Footer -->
+    <footer class="movie-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <h5 class="footer-heading">About Movie Watch</h5>
+            <p class="footer-text">
+              Your ultimate destination for the latest movies and shows. Watch
+              anytime, anywhere with our premium streaming service.
+            </p>
+            <div class="social-links mt-3">
+              <a href="#" class="social-icon facebook"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="social-icon twitter"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" class="social-icon instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="social-icon youtube"
+                ><i class="fab fa-youtube"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="col-md-3 mb-4">
+            <h5 class="footer-heading">Quick Links</h5>
+            <ul class="footer-links">
+              <li>
+                <a href="../html/Home.html"
+                  ><i class="fas fa-angle-right"></i> Home</a
+                >
+              </li>
+              <li>
+                <a href="../html/Movie_Page.html"
+                  ><i class="fas fa-angle-right"></i> Movies</a
+                >
+              </li>
+              <li>
+                <a href="../html/Review.html"
+                  ><i class="fas fa-angle-right"></i> Reviews</a
+                >
+              </li>
+              <li>
+                <a href="../html/About Page.html"
+                  ><i class="fas fa-angle-right"></i> About</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-3 mb-4">
+            <h5 class="footer-heading">Categories</h5>
+            <ul class="footer-links">
+              <li>
+                <a href="#"><i class="fas fa-film"></i> Action</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-laugh"></i> Comedy</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-theater-masks"></i> Drama</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-ghost"></i> Thriller</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-2 mb-4">
+            <h5 class="footer-heading">Help</h5>
+            <ul class="footer-links">
+              <li>
+                <a href="#"><i class="fas fa-question-circle"></i> FAQ</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-envelope"></i> Contact Us</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-shield-alt"></i> Privacy Policy</a>
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fas fa-file-contract"></i> Terms of Use</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
