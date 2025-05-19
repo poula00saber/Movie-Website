@@ -11,7 +11,7 @@ body {
     line-height: 1.6;
 }
 
-header {
+/* header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -24,7 +24,7 @@ header {
 .logo {
     font-size: 24px;
     font-weight: bold;
-}
+} */
 
 .about-section {
     text-align: center;
@@ -45,28 +45,24 @@ header {
 
 .visit-counter {
     text-align: center;
-    margin: 40px 0;
-}
-
-    .visit-counter h2 {
-        font-size: 32px;
-        color: #28a745;
-        margin-bottom: 15px;
-        font-weight: bold;
-    }
-
-.visit-number {
+  }
+  .visit-counter h2 {
+    font-size: 32px;
+    color: #28a745;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  .visit-number {
     display: inline-block;
     padding: 25px 50px;
     font-size: 48px;
-    font-weight: 900;
+    font-weight: bold;
     color: #28a745;
-    background: rgba(0, 230, 230, 0.1);
     border: 3px solid #28a745;
-    border-radius: 15px;
-    box-shadow: 0 0 25px rgba(0, 230, 230, 0.4);
-}
-
+    border-radius: 100px;
+    box-shadow: 0 0 205px rgba(0, 230, 230, 0.4);
+    min-width: 200px;
+  }
 .team_section {
     padding: 30px;
 }
@@ -74,6 +70,7 @@ header {
 .team {
     display: flex;
     justify-content: center;
+
     gap: 30px;
     flex-wrap: nowrap;
     padding: 50px 0;
@@ -98,7 +95,7 @@ header {
         height: 100%;
         object-fit: cover;
     }
-
+/*//////////////////////////////////////////////////////////*/
 /* footer {
   text-align: center;
   margin-top: 50px;

@@ -9,13 +9,14 @@
     <link rel="stylesheet" href="../css/css/navbar.css">
     <link rel="stylesheet" href="../css/css/Movie_page.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 </head>
 <body style="background-color: #141313;">
     <nav class="navbar navbar-dark ">
             <div class="d-flex justify-content-between align-items-center w-100">
                 <div class="d-flex align-items-center">
                     <a class="navbar-brand">
-                        <img src="../Assets/icon.png" width="45" height="45" class="d-inline-block align-top" alt="">
+                        <img src="../Assets/logo2.png" width="60" height="50" class="d-inline-block align-top" alt="">
                         Movie
                     </a>
                 </div>
@@ -46,6 +47,9 @@
         </nav>
 
     <div class="container">
+
+
+
         <!-- Filter Dropdowns -->
         <div class="filter-container d-flex flex-wrap gap-3">
             <div class="dropdown">
@@ -53,23 +57,14 @@
                     Category
                 </button>
                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item  " href="#">All Categories</a></li>
-                    <li><a class="dropdown-item  " href="#">Action</a></li>
-                    <li><a class="dropdown-item  " href="#">Drama</a></li>
-                    <li><a class="dropdown-item  " href="#">Comedy</a></li>
-                    <li><a class="dropdown-item  " href="#">Romantic</a></li>
-                </ul>
-            </div>
-
-            <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Language
-                </button>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item  " href="#">All Languages</a></li>
-                    <li><a class="dropdown-item  " href="#">English</a></li>
-                    <li><a class="dropdown-item  " href="#">Arabic</a></li>
-                    <li><a class="dropdown-item  " href="#">Korean</a></li>
+                    <li><a class="dropdown-item  " href="#" data-category="All">All Categories</a></li>
+                    <li><a class="dropdown-item  " href="#" data-category="Action">Action</a></li>
+                    <li><a class="dropdown-item  " href="#" data-category="Drama">Drama</a></li>
+                    <li><a class="dropdown-item  " href="#" data-category="Comedy">Comedy</a></li>
+                    <li><a class="dropdown-item  " href="#" data-category="Crime">Crime</a></li>
+                    <li><a class="dropdown-item  " href="#" data-category="Horror">Horror</a></li>
+                    <li><a class="dropdown-item  " href="#" data-category="Romantic">Romantic</a></li>
+                    <li><a class="dropdown-item  " href="#" data-category="Fantasy">Fantasy</a></li>
                 </ul>
             </div>
 
@@ -78,18 +73,21 @@
                     Release Date
                 </button>
                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item  " href="#">All Years</a></li>
-                    <li><a class="dropdown-item  " href="#">2015</a></li>
-                    <li><a class="dropdown-item  " href="#">2020</a></li>
-                    <li><a class="dropdown-item  " href="#">2022</a></li>
+                    <li><a class="dropdown-item  " href="#" data-year="All" >All Years</a></li>
+                    <li><a class="dropdown-item  " href="#" data-year="1972" >1972</a></li>
+                    <li><a class="dropdown-item  " href="#" data-year="2016">2016</a></li>
+                    <li><a class="dropdown-item  " href="#" data-year="2017">2017</a></li>
+                    <li><a class="dropdown-item  " href="#" data-year="2019">2019</a></li>
+                    <li><a class="dropdown-item  " href="#"data-year="2021">2021</a></li>
+                    <li><a class="dropdown-item  " href="#"data-year="2023">2023</a></li>
                 </ul>
             </div>
         </div>
 
         <!-- Movie Grid -->
-        <div class="movie-grid">
+        <div class="movie-grid" >
             <!-- Movie 1 -->
-            <div class="movie-card">
+            <div class="movie-card" data-category="Drama" data-year="2023">
                 <img src="../Assets/movie1.jpg" class="card-img-top" alt="1917 Movie">
                 <div class="card-body">
                     <h5 class="card-title">Oppenheimer</h5>
@@ -103,11 +101,11 @@
             </div>
             
             <!-- Movie 2 -->
-            <div class="movie-card">
+            <div class="movie-card" data-category="Crime" data-year="1972">
                 <img src="../Assets/movie2.jpg" class="card-img-top" alt="The Lighthouse Movie">
                 <div class="card-body">
                     <h5 class="card-title">The Godfather</h5>
-                    <p class="card-text">Crime/Drama • 1972 • 2h 55m</p>
+                    <p class="card-text">Crime • 1972 • 2h 55m</p>
                     <div class="d-flex justify-content-between align-items-center mt-2">
                         <span class="badge bg-warning text-dark">9.2/10</span>
                         <img src="../Assets/starIcon.png" style="width: 25px; height: 25px;" alt="">
@@ -117,11 +115,11 @@
             </div>
             
             <!-- Movie 3 -->
-            <div class="movie-card">
+            <div class="movie-card" data-category="War" data-year="2019">
                 <img src="../Assets/movie3.jpg" class="card-img-top" alt="Movie Image">
                 <div class="card-body">
                     <h5 class="card-title">1917</h5>
-                    <p class="card-text">War/Drama • 2019 • 1h 59m</p>
+                    <p class="card-text">War • 2019 • 1h 59m</p>
                     <div class="d-flex justify-content-between align-items-center mt-2">
                         <span class="badge bg-warning text-dark">8.2/10</span>
                         <img src="../Assets/starIcon.png" style="width: 25px; height: 25px;" alt="">        
@@ -131,11 +129,11 @@
             </div>
             
             <!-- Movie 4 -->
-            <div class="movie-card">
+            <div class="movie-card" data-category="Horror" data-year="2019">
                 <img src="../Assets/movie4.jpg" class="card-img-top" alt="Movie Image">
                 <div class="card-body">
                     <h5 class="card-title">The Lighthouse</h5>
-                    <p class="card-text ">Horror/Drama • 2019 • 1h 49m</p>
+                    <p class="card-text ">Horror • 2019 • 1h 49m</p>
                     <div class="d-flex justify-content-between align-items-center mt-2">
                         <span class="badge bg-warning text-dark">7.4/10</span>
                         <img src="../Assets/starIcon.png" style="width: 25px; height: 25px;" alt="">
@@ -145,13 +143,58 @@
             </div>
             
             <!-- Movie 5 -->
-            <div class="movie-card">
-                <img src="../Assets/movie7.jpg" class="card-img-top" alt="Movie Image">
+            <div class="movie-card" data-category="Fantasy" data-year="2009">
+                <img src="../Assets/harry potter .png" class="card-img-top" alt="Movie Image">
                 <div class="card-body">
-                    <h5 class="card-title">Spider-Man</h5>
-                    <p class="card-text ">Action • 2002 • 2h 01m</p>
+                    <h5 class="card-title">Harry Potter and the Half-Blood Prince</h5>
+                    <p class="card-text ">Fantasy • 2009 • 2h 33m</p>
                     <div class="d-flex justify-content-between align-items-center mt-2">
-                        <span class="badge bg-warning text-dark">7.4/10</span>
+                        <span class="badge bg-warning text-dark">9/10</span>
+                        <img src="../Assets/starIcon.png" style="width: 25px; height: 25px;" alt="">
+                        <a href="#" class="btn btn-success watch-btn">Watch Now</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Movie 6-->
+            <div class="movie-card" data-category="Drama" data-year="2017">
+                <img src="../Assets/Ayla.png" class="card-img-top" alt="Movie Image">
+                <div class="card-body">
+                    <h5 class="card-title">Ayla: The Daughter of War</h5>
+                    <p class="card-text ">Drama • 2017 • 2h 5m</p>
+                    <div class="d-flex justify-content-between align-items-center mt-2">
+                        <span class="badge bg-warning text-dark">8.2/10</span>
+                        <img src="../Assets/starIcon.png" style="width: 25px; height: 25px;" alt="">
+                        <a href="#" class="btn btn-success watch-btn">Watch Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Movie 7 -->
+            <div class="movie-card" data-category="Fantasy" data-year="2021">
+                <img src="../Assets/spider Man .png" class="card-img-top" alt="Movie Image">
+                <div class="card-body">
+                    <h5 class="card-title">TSpider-Man: No Way Home</h5>
+                    <p class="card-text ">Fantasy • 2021 • 2h 24m</p>
+                    <div class="d-flex justify-content-between align-items-center mt-2">
+                        <span class="badge bg-warning text-dark">8.4/10</span>
+                        <img src="../Assets/starIcon.png" style="width: 25px; height: 25px;" alt="">
+                        <a href="#" class="btn btn-success watch-btn">Watch Now</a>
+                    </div>
+                </div>
+            </div>
+
+
+
+                        <!-- Movie 8 -->
+            <div class="movie-card" data-category="Action" data-year="2016">
+                <img src="../Assets/civil war.png" class="card-img-top" alt="Movie Image">
+                <div class="card-body">
+                    <h5 class="card-title">Captain America Civil War</h5>
+                    <p class="card-text ">Action • 2016 • 2h 30m</p>
+                    <div class="d-flex justify-content-between align-items-center mt-2">
+                        <span class="badge bg-warning text-dark">9.4/10</span>
                         <img src="../Assets/starIcon.png" style="width: 25px; height: 25px;" alt="">
                         <a href="#" class="btn btn-success watch-btn">Watch Now</a>
                     </div>
@@ -160,6 +203,101 @@
         </div>
     </div>
 
-    <script src="../js/bootstrap.bundle.min.js"></script>
+ 
+ <script src="../js/bootstrap.bundle.min.js"></script>
+  <script src="../js/filterslogic.js"></script>
+
+        <!-- Footer -->
+    <footer class="movie-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <h5 class="footer-heading">About Movie Watch</h5>
+            <p class="footer-text">
+              Your ultimate destination for the latest movies and shows. Watch
+              anytime, anywhere with our premium streaming service.
+            </p>
+            <div class="social-links mt-3">
+              <a href="#" class="social-icon facebook"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="social-icon twitter"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" class="social-icon instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="social-icon youtube"
+                ><i class="fab fa-youtube"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="col-md-3 mb-4">
+            <h5 class="footer-heading">Quick Links</h5>
+            <ul class="footer-links">
+              <li>
+                <a href="../html/Home.html"
+                  ><i class="fas fa-angle-right"></i> Home</a
+                >
+              </li>
+              <li>
+                <a href="../html/Movie_Page.html"
+                  ><i class="fas fa-angle-right"></i> Movies</a
+                >
+              </li>
+              <li>
+                <a href="../html/Review.html"
+                  ><i class="fas fa-angle-right"></i> Reviews</a
+                >
+              </li>
+              <li>
+                <a href="../html/About Page.html"
+                  ><i class="fas fa-angle-right"></i> About</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-3 mb-4">
+            <h5 class="footer-heading">Categories</h5>
+            <ul class="footer-links">
+              <li>
+                <a href="#"><i class="fas fa-film"></i> Action</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-laugh"></i> Comedy</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-theater-masks"></i> Drama</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-ghost"></i> Thriller</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-2 mb-4">
+            <h5 class="footer-heading">Help</h5>
+            <ul class="footer-links">
+              <li>
+                <a href="#"><i class="fas fa-question-circle"></i> FAQ</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-envelope"></i> Contact Us</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-shield-alt"></i> Privacy Policy</a>
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fas fa-file-contract"></i> Terms of Use</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
 </body>
 </html>

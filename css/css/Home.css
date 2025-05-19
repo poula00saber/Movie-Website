@@ -8,41 +8,8 @@ body {
 /* /////////////////////// HERO Section ////////////////////////////// */
 
 .hero-section {
-  background: linear-gradient(
-      135deg,
-      rgba(0, 0, 0, 0.8) 0%,
-      rgba(20, 20, 20, 0.9) 100%
-    ),
-    url("../Assets/hero-bg.jpg");
-    
-  background-size: cover;
-  background-position: center;
-  position: relative;
   padding: 120px 0 140px;
-  overflow: hidden;
-  color: #fff;
-}
-
-.hero-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: radial-gradient(
-    ellipse at center,
-    rgba(16, 16, 16, 0.6) 0%,
-    rgba(0, 0, 0, 0.8) 100%
-  );
-  z-index: 1;
-}
-
-.container.position-relative {
-  z-index: 2;
-}
-
-.hero-content {
-  animation: fadeInUp 1s ease-out;
+  margin-bottom: 50px;
 }
 
 .hero-badge {
@@ -68,16 +35,7 @@ body {
   color: #28a745;
 }
 
-.highlight-text:after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 4px;
-  background: #28a745;
-  bottom: 5px;
-  left: 0;
-  border-radius: 4px;
-}
+
 
 .hero-description {
   font-size: 1.1rem;
@@ -118,7 +76,6 @@ body {
   padding: 12px 30px;
   border-radius: 30px;
   text-decoration: none;
-  display: inline-flex;
   align-items: center;
   gap: 8px;
 }
@@ -135,10 +92,9 @@ body {
 .btn-trailer i {
   font-size: 22px;
   color: #28a745;
-  transition: all 0.3s ease;
 }
 
-
+/*--------*/
 .hero-image-container {
   position: relative;
   height: 400px;
@@ -149,7 +105,6 @@ body {
   position: absolute;
   width: 180px;
   height: 270px;
-  border-radius: 10px;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
 }
 
@@ -180,10 +135,6 @@ body {
   animation: float 7s ease-in-out infinite;
 }
 
-
-
-
-/* /////////////////////// KeyFrames ////////////////////////////// */
 /* Animations */
 
 @keyframes float {
@@ -198,30 +149,6 @@ body {
   }
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px) rotate(var(--rotation, 0deg));
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0) rotate(var(--rotation, 0deg));
-  }
-}
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(90px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-
-
 
 /* /////////////////////// Best Movies ////////////////////////////// */
 
@@ -229,6 +156,7 @@ body {
 
 
 .section-title {
+  margin-top: 50px;
   color: #fff;
   font-size: 28px;
   font-weight: bold;
@@ -237,52 +165,6 @@ body {
   border-bottom: 2px solid #28a745;
   display: inline-block;
 }
-
-/* /////////////////////// You can delete it ////////////////////////////// */
-.movie-card {
-  margin: 10px;
-  background-color: #1a1a1a;
-  border-radius: 8px;
-  overflow: hidden;
-  transition: transform 0.3s;
-  height: 100%;
-}
-
-.card-img-top {
-  height: 300px;
-  object-fit: cover;
-}
-
-.card-body {
-  padding: 15px;
-}
-
-.card-title {
-  color: #fff;
-  font-weight: bold;
-}
-
-.card-text {
-  color: #ccc;
-  font-size: 14px;
-}
-
-.badge {
-  font-size: 14px;
-}
-
-.watch-btn {
-  font-size: 14px;
-  padding: 5px 10px;
-}
-
-.best-movies {
-  padding: 30px 0;
-  background-color: #111;
-}
-
-
-
 
 /* /////////////////////// Footer ////////////////////////////// */
 
@@ -309,7 +191,6 @@ footer {
   justify-content: center;
   align-items: center;
   margin-right: 10px;
-  transition: background-color 0.3s;
 }
 
 
@@ -330,15 +211,7 @@ footer {
   padding-bottom: 10px;
 }
 
-.footer-heading:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 50px;
-  height: 2px;
-  background-color: #28a745;
-}
+
 
 .footer-text {
   line-height: 1.6;
@@ -359,48 +232,12 @@ footer {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  transition: all 0.3s ease;
-}
-
-.footer-links {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.footer-links li {
-  margin-bottom: 12px;
 }
 
 .footer-links a {
   color: #ccc;
   text-decoration: none;
-  transition: color 0.3s ease;
   font-size: 14px;
   display: flex;
-  align-items: center;
+  align-items: center;
 }
-
-.footer-links a i {
-  margin-right: 8px;
-  color: #28a745;
-  font-size: 12px;
-}
-
-.footer-divider {
-  height: 1px;
-  background-color: #333;
-  margin: 30px 0;
-}
-
-
-
-.hero-wave {
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  width: 100%;
-  line-height: 0;
-  direction: ltr;
-}
-
