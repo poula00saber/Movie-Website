@@ -1,8 +1,7 @@
-// Default filter values
+
 let selectedCategory = "All";
 let selectedYear = "All";
 
-// Function to filter movies
 function filterMovies() {
   const movies = document.querySelectorAll(".movie-card");
 
@@ -21,7 +20,6 @@ function filterMovies() {
   });
 }
 
-// Add event listeners to filter items
 document.querySelectorAll('[data-category]').forEach(item => {
   item.addEventListener("click", (e) => {
     e.preventDefault();
