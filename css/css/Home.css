@@ -1,5 +1,5 @@
 body {
-  background-color: #000;
+  background-color: #131212;
   color: #fff;
   font-family: Arial, sans-serif;
 }
@@ -139,13 +139,13 @@ body {
 
 @keyframes float {
   0% {
-    transform: translateY(0) rotate(var(--rotation, 0deg));
+    transform: translateY(0) ;
   }
   50% {
-    transform: translateY(-15px) rotate(var(--rotation, 0deg));
+    transform: translateY(-15px) ;
   }
   100% {
-    transform: translateY(0) rotate(var(--rotation, 0deg));
+    transform: translateY(0);
   }
 }
 

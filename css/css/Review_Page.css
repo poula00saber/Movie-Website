@@ -13,7 +13,7 @@
 
 body {
   font-family: sans-serif;
-  background-color: #111827;
+  background-color:#141313;
   color: #f3f4f6;
   margin: 0;
   line-height: 1.6;
@@ -117,7 +117,7 @@ h1 {
 .input:focus {
   width: 250px;
   outline: none;
-  border-color: #6d28d9;
+  border-color: #17740e;
   background-color: rgba(255, 255, 255, 0.15);
   box-shadow: 0 0 0 2px rgba(109, 40, 217, 0.25);
 }
@@ -136,7 +136,7 @@ h1 {
   box-shadow: var(--shadow);
   transition: var(--transition);
   border-left: none;
-  border-top: 4px solid #6d28d9;
+  border-top: 4px solid  #17740e;
   position: relative;
   overflow: hidden;
 }
@@ -158,7 +158,7 @@ h1 {
   height: 50px;
   border-radius: 50%;
   object-fit: cover;
-  border: 2px solid #6d28d9;
+  border: 2px solid #1faf1f;
 }
 
 .review-meta {
@@ -191,7 +191,7 @@ h1 {
 
 /* BtnAddReview */
 .add-btn {
-  background-color: #6d28d9;
+  background-color: green;
   color: white;
   border: none;
   padding: 0.875rem 1.75rem;
@@ -206,7 +206,7 @@ h1 {
 }
 
 .add-btn:hover {
-  background-color: #6d28d9;
+  background-color: rgb(62, 182, 62);
   transform: translateY(-2px);
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
 }
@@ -256,7 +256,7 @@ h1 {
 }
 
 .submit-btn {
-  background-color: #6d28d9;
+  background-color:green;
   color: white;
   border: none;
   padding: 0.75rem 1.5rem;
@@ -268,7 +268,8 @@ h1 {
 }
 
 .submit-btn:hover {
-  background-color: #6d28d9;
+  background-color: rgb(62, 182, 62);
+  ;
 }
 
 .cancel-btn {
